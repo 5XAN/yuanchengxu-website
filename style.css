@@ -423,3 +423,15 @@ body{padding-bottom:90px}
 .tap.show{opacity:1}
 .tap.press{animation:tapRipple .5s ease-out}
 @keyframes tapRipple{0%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,200,61,.7)}40%{transform:scale(.7)}100%{transform:scale(1);box-shadow:0 0 0 16px rgba(255,200,61,0)}}
+
+/* ===== 手機版浮動選單：整排貼底、四個按鈕等寬、兩顆圓鈕移到選單上方 ===== */
+@media(max-width:860px){
+  .dock{left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));transform:none;max-width:none;width:auto;overflow:visible;gap:4px;padding:6px;justify-content:space-between}
+  .dock a{flex:1;text-align:center;padding:10px 2px;font-size:13px}
+  .dock a:nth-child(3){display:block}
+  .dock a:nth-child(4){display:none}
+  .fab{bottom:calc(76px + env(safe-area-inset-bottom));width:46px;height:46px}
+  .line-fab{left:14px}
+  .top-fab{right:14px}
+  body{padding-bottom:110px}
+}
