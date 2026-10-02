@@ -13,7 +13,7 @@
   function appUrl(pane, extra) {
     var q = 'pane=' + pane;
     for (var k in extra) if (extra[k]) q += '&' + k + '=' + encodeURIComponent(extra[k]);
-    return 'app/demo.html?' + q;
+    return 'app/demo.html?' + q + '&v=20261003a';
   }
 
   function goPhone(path, extra) {
