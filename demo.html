@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>線上體驗｜源程序：前台與後台操作示範</title>
+<link rel="icon" href="assets/logo.png">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="用假資料操作民眾端與後台：預約、公告、集點卡、優惠券、號碼牌，民眾端按下去，後台立刻同步。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;800&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="demo.css?v=1">
+</head>
+<body>
+
+<header class="dh">
+  <a href="index.html" class="dh-brand"><img src="assets/logo-mark-dark.jpg" alt="源程序標誌" height="36"><span>源程序<small>線上體驗</small></span></a>
+  <a href="index.html#contact" class="dh-cta">我想要這樣的系統</a>
+</header>
+
+<main class="dm">
+  <div class="intro">
+    <h1>民眾點一下，後台馬上看到</h1>
+    <p>下面是示範資料，<b>不會真的送出任何東西</b>。左邊是民眾在 LINE 裡看到的畫面，右邊是店家的後台。在左邊預約、領點、兌換優惠券、領號碼牌，右邊會即時跟著變。</p>
+    <p class="hint">試試看：先在左邊「預約」一筆，再看右邊「預約管理」。</p>
+  </div>
+
+  <div class="switch" role="tablist" aria-label="切換畫面">
+    <button type="button" class="on" data-pane="phone" role="tab">民眾端（LINE）</button>
+    <button type="button" data-pane="admin" role="tab">店家後台</button>
+  </div>
+
+  <div class="stage">
+    <section class="pane pane-phone on" id="paneP" aria-label="民眾端示範">
+      <div class="phone-shell">
+        <div class="notch"></div>
+        <div class="app" id="app"></div>
+      </div>
+      <p class="cap">民眾端：LINE 裡的服務頁面</p>
+    </section>
+
+    <section class="pane pane-admin" id="paneA" aria-label="後台示範">
+      <div class="win">
+        <div class="win-bar"><i></i><i></i><i></i><span>店家後台（示範）</span></div>
+        <div class="win-body" id="admin"></div>
+      </div>
+      <p class="cap">後台：員工在電腦或手機上看到的畫面</p>
+    </section>
+  </div>
+
+  <p class="foot">這是展示用的簡化版，實際系統功能更完整，畫面也會依你的品牌調整。想看哪一塊、想知道怎麼套到你的生意，<a href="index.html#contact">跟我們聊聊</a>。</p>
+</main>
+
+<script src="demo.js?v=1"></script>
+</body>
+</html>
