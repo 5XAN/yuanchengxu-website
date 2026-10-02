@@ -1,0 +1,1 @@
+function r(e){var t;try{if(typeof navigator>"u"||!("vibrate"in navigator)||(t=window.matchMedia)!=null&&t.call(window,"(prefers-reduced-motion: reduce)").matches)return;navigator.vibrate(e)}catch{}}const a=()=>r([14,40,22]);export{a as b};

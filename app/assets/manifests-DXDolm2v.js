@@ -1,0 +1,1 @@
+import{J as i}from"./demo-lQKy542H.js";async function r(t){const n=[...new Set(t.filter(e=>!!e))];if(n.length===0)return new Map;const a=await i("template_manifests",{p_version_ids:n});return new Map((a??[]).map(e=>[e.id,e.manifest]))}export{r as f};

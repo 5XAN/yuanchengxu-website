@@ -1,0 +1,1 @@
+const e={init:async()=>{},isLoggedIn:()=>!0,login:()=>{},getAccessToken:()=>"demo-access-token",isInClient:()=>!1,getFriendship:async()=>({friendFlag:!0}),scanCodeV2:async()=>({value:null})};export{e as default};

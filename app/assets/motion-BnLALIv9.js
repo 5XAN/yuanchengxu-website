@@ -1,0 +1,1 @@
+const t={type:"spring",stiffness:420,damping:34},p={type:"spring",stiffness:260,damping:28},e=[.16,.84,.3,1],i=s=>({type:"spring",stiffness:240,damping:13,mass:.9,delay:s}),a=s=>({type:"spring",stiffness:260,damping:16,delay:s}),g=(s,n=.03)=>({type:"spring",stiffness:520,damping:38,delay:Math.min(n*s,.15)});export{t as a,a as b,p as c,e,i as p,g as s};

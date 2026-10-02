@@ -1,0 +1,1 @@
+import{j as o}from"./demo-lQKy542H.js";import{m as s}from"./react-BeIFAYyi.js";import{u as a}from"./use-reduced-motion-CI9v492i.js";function m({children:t}){const i=a();return o.jsx(s.div,{initial:i?!1:{opacity:0,y:6},animate:{opacity:1,y:0},transition:{type:"spring",stiffness:700,damping:45,mass:.6},children:t})}export{m as default};
